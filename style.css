@@ -3,4 +3,11 @@ html, body{
     width: 100%;
 }
 
-body{background: #72263d;}
+body{
+    background: #72263d;
+    text-align: center;
+}
+
+h1{
+    color: #a2aaad;
+}
