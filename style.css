@@ -2,9 +2,5 @@ html, body{
     height: 100%;
     width: 100%;
     font-family: Arial;
-}
-
-body{
     background: #72263d;
-    text-align: center;
 }
