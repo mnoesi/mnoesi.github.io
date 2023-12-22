@@ -1,563 +1,84 @@
-/* Style the landing page using CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.navbar {
-    background-color: #fff;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    width: 200px;
-    height: 60px;
-}
-
-.logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.menu {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-}
-
-.menu ul li {
-    margin: 0 10px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.menu ul li a:hover {
-    background-color: #f0f0f0;
-}
-
-.hamburger {
-    display: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: relative;
-}
-
-.hamburger span {
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.3s;
-}
-
-.hamburger span:before,
-.hamburger span:after {
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    transition: 0.3s;
-}
-
-.hamburger span:before {
-    top: -12px;
-}
-
-.hamburger span:after {
-    bottom: -12px;
-}
-
-.side-navbar {
-    width: 0%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #fff;
-    z-index: 999;
-    overflow: hidden;
-    transition: 0.3s;
-}
-
-.side-navbar ul {
-    list-style: none;
-    margin-top: 80px;
-    padding: 0 20px;
-}
-
-.side-navbar ul li {
-    margin: 20px 0;
-}
-
-.side-navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 20px;
-    display: block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.side-navbar ul li a:hover {
-    background-color: #f0f0f0;
-}
-
-.close {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.close span {
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    transition: 0.3s;
-}
-
-.close span:before {
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    transform: rotate(-90deg);
-    transition: 0.3s;
-}
-
-/* Style the landing page using CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.navbar {
-    background-color: #fff;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    width: 200px;
-    height: 60px;
-}
-
-.logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.menu {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-}
-
-.menu ul li {
-    margin: 0 10px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.menu ul li a:hover {
-    background-color: #f0f0f0;
-}
-
-.hamburger {
-    display: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: relative;
-}
-
-.hamburger span {
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.3s;
-}
-
-.hamburger span:before,
-.hamburger span:after {
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    transition: 0.3s;
-}
-
-.hamburger span:before {
-    top: -12px;
-}
-
-.hamburger span:after {
-    bottom: -12px;
-}
-
-.side-navbar {
-    width: 0%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #fff;
-    z-index: 999;
-    overflow: hidden;
-    transition: 0.3s;
-}
-
-.side-navbar ul {
-    list-style: none;
-    margin-top: 80px;
-    padding: 0 20px;
-}
-
-.side-navbar ul li {
-    margin: 20px 0;
-}
-
-.side-navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 20px;
-    display: block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.side-navbar ul li a:hover {
-    background-color: #f0f0f0;
-}
-
-.close {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.close span {
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    transition: 0.3s;
-}
-
-.close span:before {
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    transform: rotate(-90deg);
-    transition: 0.3s;
-}
-
-.hero {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-}
-
-.hero-content {
-    flex: 1;
-    padding: 20px;
-}
-
-.hero-content h1 {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 24px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.hero-content a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 15px 30px;
-    background-color: #333;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.hero-content a:hover {
-    background-color: #444;
-}
-
-.hero-image {
-    flex: 1;
-    padding: 20px;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.form {
-    background-color: #f0f0f0;
-    padding: 40px 0;
-}
-
-.form-content {
-    width: 600px;
-    margin: 0 auto;
-}
-
-.form-content h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.form-content p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.form-content form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin: 10px 0;
-}
-
-.form-group label {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
-    height: 40px;
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.form-group input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-.form-group button {
-    width: 200px;
-    height: 50px;
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 20px;
-    color: #fff;
-    font-weight: bold;
-    background-color: #333;
-    transition: 0.3s;
-}
-
-.form-group button:hover {
-    background-color: #444;
-}
-
-.footer {
-    background-color: #333;
-    padding: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-logo {
-    width: 200px;
-    height: 60px;
-    margin: 20px;
-}
-
-.footer-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.footer-menu {
-    flex: 1;
-    margin: 20px;
-}
-
-.footer-menu ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-menu ul li {
-    margin: 10px;
-}
-
-.footer-menu ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.footer-menu ul li a:hover {
-    color: #f0f0f0;
-}
-
-.footer-social {
-    margin: 20px;
-}
-
-.footer-social ul {
-    list-style: none;
-    display: flex;
-}
-
-.footer-social ul li {
-    margin: 10px;
-}
-
-.footer-social ul li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.footer-social ul li a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.3s;
-}
-
-.footer-social ul li a img:hover {
-    transform: scale(1.1);
-}
-
-.footer-copy {
-    margin: 20px;
-}
-
-.footer-copy p {
-    color: #fff;
-    font-size: 16px;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .hero {
-        flex-direction: column;
-    }
-
-    .hero-content {
-        text-align: center;
-    }
-
-    .hero-image {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .form-content {
-        width: 80%;
-    }
-}
+        /* You can add your own CSS styles here to customize the appearance of your website */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header nav {
+            display: flex;
+        }
+        header nav a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            background-color: #555;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        main aside {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        main aside h2 {
+            margin-top: 0;
+        }
+        main aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        main aside ul li {
+            margin: 10px 0;
+        }
+        main aside ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        main aside ul li a:hover {
+            text-decoration: underline;
+        }
+        main section {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        main section h2 {
+            margin-top: 0;
+        }
+        main section article {
+            margin: 20px 0;
+        }
+        main section article h3 {
+            margin: 0;
+        }
+        main section article p {
+            margin: 10px 0;
+        }
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
