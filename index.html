@@ -1,40 +1,123 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html>
 	<head>
-		<title>Houston University (HU) 🐯</title>
-		<link rel = "stylesheet" type = "text/css" href = "css/style.css">
-		<meta charset = "utf-8" name = "viewport" content = "width=device-width, initial-scale=1">
+		<title>Houston University</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<header>
-			<h1>Michael A. Noesi, B.S.</h1>
-			<p>TECH 329<br> Computer Science (CS) Department<br>Leonard H.O. Spearman Technology (LHOST) Building<br>College of Science, Engineering, and Technology (COSET)<br>Houston, Texas - 77004</p>
-		</header>
-		<main>
-			<section id = "biography">
-				<h2>About 📖</h2>
-				<p>Hello, World!<br>My name is Michael, and I'm a remote Student Tutor 🎓. I was born in 1997 in Houston, Texas 🌆. I'm 26 years old and I have a dog named Italiano 🐶. I started coding back in 2017 and currently have 6 years of programming experience 💻. On my free time, I like to paint digitally 🎨, play basketball 🏀, walk my dog, and jog at Memorial Park 🏞️. My favorite food is a grilled chicken Po'Boy (no tomatoes, no onions) and my favorite drink is an Arizona Green Tea with extra ice 🍹. A fun fact about me is I speak three languages: English , Spanish, and Japanese.</p>
-			</section>
-			<section id = "contact">
-				<h2>Contact 📱</h2>
-				<ul>
-					<li>Email: <a href = "mailto:michael.noesi@tsu.edu">michael.noesi@houston.university</a></li>
-					<li>Mobile: <a href = "tel:9796612116">(979) 661-2116</a></li>
-					<li>Resume: <a href = "pdf/curriculum_vitae.pdf" target = "_blank">curriculum_vitae.pdf</a></li>
-				</ul>
-				<h2>Socials 📲</h2>
-				<ul>
-					<li>LinkedIn: <a href = "https://www.linkedin.com/in/michaelnoesi" target = "_blank"><span>linkedin.com/in/michaelnoesi</span></a></li>
-					<li>GitHub: <a href = "https://www.github.com/mnoesi" target = "_blank"><span>github.com/mnoesi</span></a></li>
-					<li>YouTube: <a href = "https://www.youtube.com/@michaelnoesi877/videos" target = "_blank"><span>youtube.com/@michaelnoesi877</span></a></li>
-					<li>InstaGram: <a href = "https://www.instagram.com/noesimotionpictures" target = "_blank"><span>instagram.com/noesimotionpictures</span></a></li>
-					<li>Twitter: <a href = "https://www.twitter.com/michael_noesi" target = "_blank"><span>twitter.com/michael_noesi</span></a></li>
-				</ul>
-			</section>
-		</main>
-		<footer>
-			<p>&copy; <span id = "year"></span> Houston University (HU) 🐯</p>
+		<nav class="navbar">
+			<div class="container">
+				<div class="logo">
+					<img src="logo.png" alt="University Logo">
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Programs</a></li>
+						<li><a href="#">Faculty</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="hamburger" onclick="openNavbar()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+		<div class="side-navbar" id="sideNavigationBar">
+			<div class="close" onclick="closeNavbar()">
+				<span></span>
+				<span></span>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Programs</a></li>
+				<li><a href="#">Faculty</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<h1>Welcome to University</h1>
+					<p>The best place to learn, grow, and succeed.</p>
+					<a href="#" class="btn">Apply Now</a>
+				</div>
+				<div class="hero-image">
+					<img src="hero.png" alt="Hero Image">
+				</div>
+			</div>
+		</div>
+		<div class="form">
+			<div class="container">
+				<div class="form-content">
+					<h2>Get Your Free Brochure</h2>
+					<p>Fill out the form below and we'll send you a free brochure with more information about our university and programs.</p>
+					<form action="#" method="post">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" placeholder="Enter your name" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="Enter your email" required>
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<input type="tel" id="phone" name="phone" placeholder="Enter your phone" required>
+						</div>
+						<div class="form-group">
+							<label for="program">Program of Interest</label>
+							<select id="program" name="program" required>
+								<option value="">Select a program</option>
+								<option value="Computer Science">Computer Science</option>
+								<option value="Business Administration">Business Administration</option>
+								<option value="Engineering">Engineering</option>
+								<option value="Art and Design">Art and Design</option>
+								<option value="Education">Education</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="consent" name="consent" required>
+							<label for="consent">I agree to receive emails from University</label>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-logo">
+					<img src="logo.png" alt="University Logo">
+				</div>
+				<div class="footer-menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Programs</a></li>
+						<li><a href="#">Faculty</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<ul>
+						<li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+						<li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+						<li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+						<li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
+					</ul>
+				</div>
+				<div class="footer-copy">
+					<p>© 2023 University. All rights reserved.</p>
+				</div>
+			</div>
 		</footer>
-		<script src = "javascript/script.js"></script>
+		<script src="index.js"></script>
 	</body>
 </html>
