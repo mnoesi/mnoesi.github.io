@@ -1,123 +1,54 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Houston University (HU)</title>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<nav class="navbar">
-			<div class="container">
-				<div class="logo">
-					<!-- <img src="logo.png" alt="University Logo"> -->
-				</div>
-				<div class="menu">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Programs</a></li>
-						<li><a href="#">Faculty</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="hamburger" onclick="openNavbar()">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-		</nav>
-		<div class="side-navbar" id="sideNavigationBar">
-			<div class="close" onclick="closeNavbar()">
-				<span></span>
-				<span></span>
-			</div>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Programs</a></li>
-				<li><a href="#">Faculty</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-		<div class="hero">
-			<div class="container">
-				<div class="hero-content">
-					<h1>Welcome to University</h1>
-					<p>The best place to learn, grow, and succeed.</p>
-					<a href="#" class="btn">Apply Now</a>
-				</div>
-				<div class="hero-image">
-					<!-- <img src="hero.png" alt="Hero Image"> -->
-				</div>
-			</div>
-		</div>
-		<div class="form">
-			<div class="container">
-				<div class="form-content">
-					<h2>Get Your Free Brochure</h2>
-					<p>Fill out the form below and we'll send you a free brochure with more information about our university and programs.</p>
-					<form action="#" method="post">
-						<div class="form-group">
-							<label for="name">Name</label>
-							<input type="text" id="name" name="name" placeholder="Enter your name" required>
-						</div>
-						<div class="form-group">
-							<label for="email">Email</label>
-							<input type="email" id="email" name="email" placeholder="Enter your email" required>
-						</div>
-						<div class="form-group">
-							<label for="phone">Phone</label>
-							<input type="tel" id="phone" name="phone" placeholder="Enter your phone" required>
-						</div>
-						<div class="form-group">
-							<label for="program">Program of Interest</label>
-							<select id="program" name="program" required>
-								<option value="">Select a program</option>
-								<option value="Computer Science">Computer Science</option>
-								<option value="Business Administration">Business Administration</option>
-								<option value="Engineering">Engineering</option>
-								<option value="Art and Design">Art and Design</option>
-								<option value="Education">Education</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<input type="checkbox" id="consent" name="consent" required>
-							<label for="consent">I agree to receive emails from University</label>
-						</div>
-						<div class="form-group">
-							<button type="submit" class="btn">Submit</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-logo">
-					<!-- <img src="logo.png" alt="University Logo"> -->
-				</div>
-				<div class="footer-menu">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Programs</a></li>
-						<li><a href="#">Faculty</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="footer-social">
-					<ul>
-						<li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
-						<li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
-						<li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
-						<li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
-					</ul>
-				</div>
-				<div class="footer-copy">
-					<p>© 2023 University. All rights reserved.</p>
-				</div>
-			</div>
-		</footer>
-		<script src="index.js"></script>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This meta tag ensures that the website is responsive on different screen sizes -->
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <aside id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="My profile picture" width="200" height="200">
+            <!-- You can replace this image with your own profile picture -->
+            <p>Hi, I'm John Doe, a computer science student at XYZ University. I'm passionate about programming, web development, and artificial intelligence. I'm always eager to learn new skills and technologies, and I enjoy working on challenging projects that solve real-world problems.</p>
+            <h2>Skills</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+                <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+                <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
+                <li><a href="https://www.w3schools.com/python/">Python</a></li>
+                <li><a href="https://www.w3schools.com/java/">Java</a></li>
+                <li><a href="https://www.w3schools.com/sql/">SQL</a></li>
+            </ul>
+        </aside>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Personal Website</h3>
+                <p>This is the website that you are currently viewing. It is a simple and responsive portfolio website that showcases my skills and projects. It is built using only HTML5 and CSS3, without any frameworks or libraries. I used various HTML5 elements, such as header, nav, main, aside, section, article, footer, etc., to create a semantic and structured layout. I also used CSS3 grid and flexbox to create a responsive design that adapts to different screen sizes.</p>
+            </article>
+            <article>
+                <h3>Chatbot</h3>
+                <p>This is a chatbot that I built using Python and TensorFlow. It is a conversational agent that can answer questions, provide information, and chat about various topics. It uses natural language processing and deep learning techniques, such as word embeddings, recurrent neural networks, and attention mechanisms, to understand and generate natural language. It can also handle multiple intents, contexts, and entities, and provide relevant responses based on the user's input.</p>
+            </article>
+            <article>
+                <h3>Web Scraper</h3>
+                <p>This is a web scraper that I built using Python and BeautifulSoup. It is a tool that can extract data from any website and store it in a CSV file. It can handle different types of web pages, such as static, dynamic, and paginated, and parse various HTML elements, such as tables, lists, links, images, etc. It can also handle errors, exceptions, and HTTP requests, and provide user-friendly feedback.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 John Doe. All rights reserved.</p>
+    </footer>
+</body>
 </html>
