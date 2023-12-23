@@ -41,7 +41,7 @@
             margin-top: 0;
         }
         main aside ul {
-            list-style: none;
+            list-style-type: disc;
             padding: 0;
         }
         main aside ul li {
