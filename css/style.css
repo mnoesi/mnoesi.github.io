@@ -42,7 +42,7 @@
         }
         main aside ul {
             list-style-type: disc;
-            padding: 0;
+            padding-left: 25px;
         }
         main aside ul li {
             margin: 10px 0;
