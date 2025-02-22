@@ -1,0 +1,20 @@
+.header, .section-title {
+    color: #72263D;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.hr {
+    border: 1px solid #72263D;
+    margin-top: 0.1in;
+    margin-bottom: 0.1in;
+}
+.no-bullet {
+    list-style: none;
+    padding: 0;
+}
+.item-title {
+    font-weight: bold;
+}
+.item-subtitle {
+    font-style: italic;
+}
